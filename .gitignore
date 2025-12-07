@@ -38,10 +38,10 @@ artifacts/
 # macOS
 .DS_Store
 
-# FlipShot screenshots
-Screenshots/
-*.png
-*.jpg
-*.jpeg
-*.bmp
-*.gif
+# FlipShot screenshots (commented out to allow image uploads)
+# Screenshots/
+# *.png
+# *.jpg
+# *.jpeg
+# *.bmp
+# *.gif
