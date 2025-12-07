@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlipShot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17ca8c74b2faa3b3ea19f3acf170ca2a34dc98d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3519499216f5f0016914be804871729d8000b05e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlipShot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlipShot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
