@@ -14,25 +14,26 @@ class Program
         var outputDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Screenshots");
         Directory.CreateDirectory(outputDir);
 
-        // Take screenshot
+        // Take screenshot with processing (grayscale + flip)
         Console.WriteLine("📸 Taking screenshot...");
-        var screenshot = await ImageCapture.CaptureScreen();
-
-        // Convert to black and white
-        Console.WriteLine("🎨 Converting to black and white...");
-        var processedImage = ImageProcessor.ConvertToGrayscale(screenshot);
+        Console.WriteLine("🎨 Processing (black & white + flip)...");
+        var processedImage = await ScreenshotManager.CaptureAndProcess(
+            flipHorizontal: true,
+            makeGrayscale: true
+        );
 
         // Save image
-        var fileName = $"Screenshot_BW_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
-        var filePath = Path.Combine(outputDir, fileName);
-
-        await processedImage.SaveAsPngAsync(filePath);
+        var filePath = await ScreenshotManager.SaveProcessedImage(
+            processedImage,
+            outputDir,
+            isFlipped: true,
+            isGrayscale: true
+        );
 
         Console.WriteLine("✅ Screenshot saved!");
         Console.WriteLine($"📂 {filePath}");
 
         // Clean up memory
-        screenshot.Dispose();
         processedImage.Dispose();
     }
 }
