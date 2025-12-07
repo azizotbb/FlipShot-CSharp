@@ -49,11 +49,16 @@ FlipShot-CSharp/
 
 **Your boring screenshot:**
 
+![UI](img/Screenshot 1447-06-16 at 11.54.44 PM.png)
+
+
 ```
 😴 "Look, it's my desktop with 47 browser tabs open and that file I forgot to delete"
 ```
 
 **After FlipShot's dramatic makeover:**
+![UI](img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png)
+
 
 ```
 🎭 "Behold! A mysterious monochrome portal to an alternate dimension!"
