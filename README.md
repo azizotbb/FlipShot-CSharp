@@ -49,7 +49,7 @@ FlipShot-CSharp/
 
 **Your boring screenshot:**
 
-![UI](img/Screenshot 1447-06-16 at 11.54.44 PM.png)
+<img src="img/Screenshot.png" width="300" />
 
 
 ```
@@ -57,7 +57,7 @@ FlipShot-CSharp/
 ```
 
 **After FlipShot's dramatic makeover:**
-![UI](img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png)
+<img src="img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png" width="300" />
 
 
 ```
