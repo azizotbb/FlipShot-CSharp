@@ -10,7 +10,7 @@ class Program
         Console.WriteLine("🔥 FlipShot - Screenshot Tool");
         Console.WriteLine("============================");
 
-        // Create output directory if it doesn't exist
+        // Create output folder
         var outputDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Screenshots");
         Directory.CreateDirectory(outputDir);
 
@@ -18,17 +18,21 @@ class Program
         Console.WriteLine("📸 Taking screenshot...");
         var screenshot = await ImageCapture.CaptureScreen();
 
-        // Save the screenshot
-        var fileName = $"Screenshot_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
+        // Convert to black and white
+        Console.WriteLine("🎨 Converting to black and white...");
+        var processedImage = ImageProcessor.ConvertToGrayscale(screenshot);
+
+        // Save image
+        var fileName = $"Screenshot_BW_{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png";
         var filePath = Path.Combine(outputDir, fileName);
 
-        await screenshot.SaveAsPngAsync(filePath);
+        await processedImage.SaveAsPngAsync(filePath);
 
-        Console.WriteLine("✅ Screenshot saved successfully!");
-        Console.WriteLine($"📂 Location: {filePath}");
-        Console.WriteLine($"📐 Size: {screenshot.Width} x {screenshot.Height}");
+        Console.WriteLine("✅ Screenshot saved!");
+        Console.WriteLine($"📂 {filePath}");
 
-        // Clean up
+        // Clean up memory
         screenshot.Dispose();
+        processedImage.Dispose();
     }
 }
