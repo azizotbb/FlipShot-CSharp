@@ -53,18 +53,14 @@ FlipShot-CSharp/
 
 
 
-```
-😴 "Look, it's my desktop with 47 browser tabs open and that file I forgot to delete"
-```
+
 
 **After FlipShot's dramatic makeover:**
 <br/>
 <img src="img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png" width="600" />
 
 
-```
-🎭 "Behold! A mysterious monochrome portal to an alternate dimension!"
-```
+
 
 Your friends will think you became a vintage photography expert overnight! 📷✨
 
@@ -84,6 +80,12 @@ Translation: "A screenshot, black and white, flipped, created on this very speci
 - SixLabors.ImageSharp (sounds important, right?)
 - A sense of humor (not included, sold separately)
 
+
+## 📦 Libraries Used
+
+- **SixLabors.ImageSharp 3.1.5** - Image processing
+- **SixLabors.ImageSharp.Drawing 2.1.4** - Drawing shapes
+  
 ## 🎉 Disclaimer
 
 Side effects may include: sudden urges to become a film noir director, compulsive black-and-white photography, and the inexplicable need to wear a fedora while using your computer.
