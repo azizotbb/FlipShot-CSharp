@@ -49,7 +49,8 @@ FlipShot-CSharp/
 
 **Your boring screenshot:**
 
-<img src="img/Screenshot.png" width="300" />
+<img src="img/Screenshot.png" width="600" />
+
 
 
 ```
@@ -57,7 +58,8 @@ FlipShot-CSharp/
 ```
 
 **After FlipShot's dramatic makeover:**
-<img src="img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png" width="300" />
+<img src="img/Screenshot_BW_Flipped_2025-12-07_23-57-15.png" width="600" />
+<br/>
 
 
 ```
