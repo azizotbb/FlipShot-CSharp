@@ -33,9 +33,10 @@ Then sit back and watch your computer have an identity crisis! 🤖💭
 ```
 FlipShot-CSharp/
 ├── Program.cs              # The mastermind behind the madness
-├── ImageCapture.cs         # The screen kidnapper
-├── ImageProcessor.cs       # The image torture chamber
-├── ScreenshotManager.cs    # The puppet master
+├── Classes/                # The organized gang
+│   ├── ImageCapture.cs     # The screen kidnapper
+│   ├── ImageProcessor.cs   # The image torture chamber
+│   └── ScreenshotManager.cs # The puppet master
 └── FlipShot.csproj        # The configuration confusion
 ```
 
@@ -80,12 +81,19 @@ Translation: "A screenshot, black and white, flipped, created on this very speci
 - SixLabors.ImageSharp (sounds important, right?)
 - A sense of humor (not included, sold separately)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 109efe4 (Organize project structure and update README)
 ## 📦 Libraries Used
 
 - **SixLabors.ImageSharp 3.1.5** - Image processing
 - **SixLabors.ImageSharp.Drawing 2.1.4** - Drawing shapes
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 109efe4 (Organize project structure and update README)
 ## 🎉 Disclaimer
 
 Side effects may include: sudden urges to become a film noir director, compulsive black-and-white photography, and the inexplicable need to wear a fedora while using your computer.
